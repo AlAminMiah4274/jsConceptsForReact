@@ -17,10 +17,16 @@ const prices = products.map(product => product.price);
 const cheap = products.filter(product => product.price <= 5000);
 // console.log(cheap);
 
-const specificName = products.filter(product => product.name.includes('p'));
-// console.log(specificName);
+const specificName = products.filter(product => product.name.includes('b'));
+console.log(specificName);
 
 const special = products.find(product => product.name.includes('n'));
 // console.log(special);
 
 // return array: map() & filter()  // doesn't return array: forEach() & find()
+
+// let person = null;
+// console.log(person ? person : "person is null");
+
+const obj = { a: 1 };
+// console.log(Object.keys(obj).length === 0);
